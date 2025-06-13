@@ -5,10 +5,10 @@ import pandas as pd
 st.title("EPF Retirement Projection Dashboard")
 
 # Inputs
-basic_pay = st.number_input("Monthly Basic Pay (₹)", value=181000)
-vpf_contribution = st.number_input("Annual VPF Contribution (₹)", value=450000)
-current_epf = st.number_input("Current EPF Balance (₹)", value=12700000)
-age = st.slider("Current Age", min_value=20, max_value=59, value=48)
+basic_pay = st.number_input("Monthly Basic Pay (₹)", value=5000)
+vpf_contribution = st.number_input("Annual VPF Contribution (₹)", value=1000)
+current_epf = st.number_input("Current EPF Balance (₹)", value=100000)
+age = st.slider("Current Age", min_value=20, max_value=59, value=30)
 retirement_age = st.slider("Retirement Age", min_value=50, max_value=70, value=60)
 salary_growth = st.slider("Annual Salary Growth (%)", min_value=0.0, max_value=10.0, value=4.0)
 epf_interest = st.slider("EPF Interest Rate (%)", min_value=6.0, max_value=10.0, value=8.25)
